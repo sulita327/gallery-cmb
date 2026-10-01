@@ -518,14 +518,17 @@ footer {
    font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
    font-weight: 700;
 }
+
+.location-detail p:nth-child(2){
+   font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+   font-weight: 700;
+}
+
 .location-info p.address-ko,
 .location-info p.address-en {
    font-weight: 700;
 }
 
-.location-detail p:nth-child(2){
-   font-weight: 700;
-}
 
 .location-image {
     width: 100%;
