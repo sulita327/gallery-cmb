@@ -1,47 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery CMB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-body {
-    font-family: 'Apple SD Gothic Neo', 'Helvetica Neue', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    color: #111;
-}
+<body>
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
-}
+<header>
+    <a href="index.html">
+        <img src="logo.png" alt="Gallery CMB Logo" class="logo">
+    </a>
 
-.logo {
-    height: 50px;
-}
+    <nav>
+        <a href="index.html">Exhibitions</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 15px;
-}
 
-nav a {
-    text-decoration: none;
-    color: #111;
-    font-weight: 500;
-}
+<main>
 
-main {
-    padding: 40px 20px;
-}
+    <section class="page-title">
+        <h1>Exhibitions</h1>
+    </section>
 
-section {
-    margin-bottom: 60px;
-}
 
-footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
-    border-top: 1px solid #ddd;
-}
+    <section class="exhibitions">
+
+        <!-- 전시 사진은 나중에 여기에 추가 -->
+
+        <div class="exhibition-placeholder">
+            <p>Exhibitions</p>
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© 2026 Gallery Color Me Bad. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
