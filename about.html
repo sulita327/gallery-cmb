@@ -1,82 +1,243 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About — Gallery CMB</title>
-    <link rel="stylesheet" href="./style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About </title>
+
+<link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
 <header>
 
-    <button class="menu-button" onclick="toggleMenu()" aria-label="Open menu">
+    <button class="menu-button"
+            onclick="toggleMenu()"
+            aria-label="Open menu">
+
         <span></span>
         <span></span>
         <span></span>
+
     </button>
 
+
     <a href="index.html" class="logo-link">
-        <img src="logo.png" alt="Gallery CMB" class="logo">
+
+        <img
+            src="./logo.png"
+            alt="Gallery CMB"
+            class="logo"
+        >
+
     </a>
 
 </header>
 
 
 <nav id="menu" class="menu">
+
     <a href="index.html">Exhibitions</a>
+
     <a href="about.html">About</a>
+
 </nav>
 
 
 <main>
 
+
+    <!-- INTRO -->
+
     <section class="about-intro">
-        <h1>Gallery Color Me Bad</h1>
+
+        <h1>Color Me Bad</h1>
 
         <p>
-            Gallery Color Me Bad is an independent exhibition space
-            located in Yongsan-gu, Seoul.
+            남산, 해방촌에 위치한 30평대 전시공간.
+            <br>
+            깔끔하고 감각적인 공간 구성으로
+            전시, 팝업, 다양한 창작 활동을 위한 공간을 제공합니다.
         </p>
 
     </section>
 
 
-    <section class="space">
-        <h2>Color Me Bad </h2>
 
-        <div class="space-images">
-            <!-- Black 공간 사진 -->
+    <!-- SPACE -->
+
+    <section class="space">
+
+        <h2>Space</h2>
+
+
+        <div class="space-carousel">
+
+            <button
+                class="carousel-button prev"
+                onclick="changeSlide(-1)"
+                aria-label="Previous image"
+            >
+                ‹
+            </button>
+
+
+            <div class="carousel-image-wrap">
+
+                <img
+                    id="spaceImage"
+                    src="./space-01.jpg"
+                    alt="Color Me Bad space"
+                >
+
+            </div>
+
+
+            <button
+                class="carousel-button next"
+                onclick="changeSlide(1)"
+                aria-label="Next image"
+            >
+                ›
+            </button>
+
         </div>
+
+
+        <div class="carousel-counter">
+
+            <span id="currentSlide">01</span>
+            <span> / 04</span>
+
+        </div>
+
+
+
+        <!-- SPACE INFO -->
 
         <div class="space-info">
-            <p>Seoul, Yongsan-gu</p>
-            <p>소월로20길 67, B1</p>
+
+            <p>서울시 용산구 소월로20길 67, B1</p>
+
+            <p>109㎡ · 33평</p>
+
+            <p>전시 공간 82.64㎡ · 25평</p>
+
+            <p>천장고 2640mm</p>
+
         </div>
+
     </section>
 
+
+
+    <!-- FLOOR PLAN -->
+
+    <section class="floor-plan">
+
+        <h2>Floor Plan</h2>
+
+
+        <img
+            src="./floor-plan.jpg"
+            alt="Color Me Bad floor plan"
+        >
+
+    </section>
+
+
+
+    <!-- INFO -->
 
     <section class="contact">
+
         <h2>Info</h2>
 
-        <p>Email: info@gallerycmb.co.kr</p>
-        <p>Instagram: @cmbgallery</p>
+        <p>
+            For exhibition &amp; space rental inquiries
+        </p>
+
     </section>
+
 
 </main>
 
 
+
 <footer>
+
     © 2026 Gallery Color Me Bad
+
 </footer>
 
 
+
 <script>
-function toggleMenu() {
-    document.getElementById("menu").classList.toggle("open");
+
+const spaceImages = [
+
+    "./space-01.jpg",
+    "./space-02.jpg",
+    "./space-03.jpg",
+    "./space-04.jpg"
+
+];
+
+
+let currentIndex = 0;
+
+
+function changeSlide(direction) {
+
+    const image = document.getElementById("spaceImage");
+    const counter = document.getElementById("currentSlide");
+
+
+    image.classList.add("changing");
+
+
+    setTimeout(() => {
+
+        currentIndex += direction;
+
+
+        if (currentIndex < 0) {
+            currentIndex = spaceImages.length - 1;
+        }
+
+
+        if (currentIndex >= spaceImages.length) {
+            currentIndex = 0;
+        }
+
+
+        image.src = spaceImages[currentIndex];
+
+
+        counter.textContent =
+            String(currentIndex + 1).padStart(2, "0");
+
+
+        image.classList.remove("changing");
+
+    }, 180);
+
 }
+
+
+
+function toggleMenu() {
+
+    document
+        .getElementById("menu")
+        .classList.toggle("open");
+
+}
+
 </script>
+
 
 </body>
 </html>
