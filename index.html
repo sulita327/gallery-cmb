@@ -1,60 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>Gallery CMB</title>
-    <link rel="stylesheet" href="./style.css">
+
+    <!-- Noto Sans KR -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="./style.css"
+    >
+
 </head>
+
 
 <body>
 
-<header>
 
-    <button class="menu-button" onclick="toggleMenu()" aria-label="Open menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+<header class="site-header">
 
-    <a href="index.html" class="logo-link">
-        <img src="logo.png" alt="Gallery CMB" class="logo">
+    <!-- LOGO -->
+
+    <a
+        href="index.html"
+        class="logo-link"
+    >
+
+        <img
+            src="./logo.png"
+            alt="Gallery CMB"
+            class="logo"
+        >
+
     </a>
+
+
+    <!-- NAVIGATION -->
+
+    <nav class="main-nav">
+
+        <a href="index.html">
+            Exhibitions
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+    </nav>
 
 </header>
 
 
-<nav id="menu" class="menu">
-    <a href="index.html">Exhibitions</a>
-    <a href="about.html">About</a>
-</nav>
-
 
 <main>
 
+
+    <!-- EXHIBITIONS -->
+
     <section class="page-title">
-        <h1>Exhibitions</h1>
+
+        <h1>
+            Exhibitions
+        </h1>
+
     </section>
+
 
     <section class="exhibitions">
 
-        <!-- 전시 사진은 나중에 추가 -->
+        <!--
+        전시 포스터는 나중에 이곳에 추가
+        -->
 
     </section>
+
 
 </main>
 
 
+
 <footer>
+
     © 2026 Gallery Color Me Bad. All rights reserved.
+
 </footer>
 
 
-<script>
-function toggleMenu() {
-    document.getElementById("menu").classList.toggle("open");
-}
-</script>
-
 </body>
+
 </html>
