@@ -1,68 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+<title>Color Me Bad</title>
 
-    <title>Gallery CMB</title>
-
-    <!-- Noto Sans KR -->
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
-
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap"
-        rel="stylesheet"
-    >
-
-    <link
-        rel="stylesheet"
-        href="./style.css"
-    >
+<link rel="stylesheet" href="./style.css">
 
 </head>
 
 
 <body>
 
-
 <header class="site-header">
 
-    <!-- LOGO -->
-
-    <a
-        href="index.html"
-        class="logo-link"
-    >
-
+    <a href="index.html" class="logo-link">
         <img
-            src="./logo.png"
-            alt="Gallery CMB"
+            src="logo.png"
+            alt="Color Me Bad"
             class="logo"
         >
-
     </a>
 
 
-    <!-- NAVIGATION -->
-
     <nav class="main-nav">
 
-        <a href="index.html">
+        <a href="exhibitions.html">
             Exhibitions
         </a>
 
@@ -75,39 +41,88 @@
 </header>
 
 
+<main class="home">
 
-<main>
+    <section class="poster-carousel">
+
+        <button
+            class="poster-button poster-prev"
+            onclick="changePoster(-1)"
+            aria-label="Previous poster"
+        >
+            ‹
+        </button>
 
 
-    <!-- EXHIBITIONS -->
+        <div class="poster-stage">
 
-    <section class="page-title">
+            <img
+                class="poster-slide active"
+                src="./poster-01.jpg"
+                alt="Exhibition poster"
+            >
 
-        <h1>
-            Exhibitions
-        </h1>
+            <img
+                class="poster-slide"
+                src="./poster-02.jpg"
+                alt="Exhibition poster"
+            >
+
+            <img
+                class="poster-slide"
+                src="./poster-03.jpg"
+                alt="Exhibition poster"
+            >
+
+            <img
+                class="poster-slide"
+                src="./poster-04.jpg"
+                alt="Exhibition poster"
+            >
+
+        </div>
+
+
+        <button
+            class="poster-button poster-next"
+            onclick="changePoster(1)"
+            aria-label="Next poster"
+        >
+            ›
+        </button>
 
     </section>
-
-
-    <section class="exhibitions">
-
-        <!--
-        전시 포스터는 나중에 이곳에 추가
-        -->
-
-    </section>
-
 
 </main>
 
 
+<script>
 
-<footer>
+let posterIndex = 0;
 
-    © 2026 Gallery Color Me Bad. All rights reserved.
+const posters =
+    document.querySelectorAll(".poster-slide");
 
-</footer>
+
+function changePoster(direction) {
+
+    const nextIndex =
+        (posterIndex + direction + posters.length)
+        % posters.length;
+
+    posters[posterIndex]
+        .classList
+        .remove("active");
+
+    posters[nextIndex]
+        .classList
+        .add("active");
+
+    posterIndex = nextIndex;
+
+}
+
+</script>
 
 
 </body>
