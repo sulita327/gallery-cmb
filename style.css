@@ -491,7 +491,7 @@ footer {
 }
 
 .location-info {
-    text-align: left;
+    text-align: right;
 }
 
 .location-info h2 {
@@ -502,7 +502,7 @@ footer {
 
 .location-info p {
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.8;
     font-weight: 400;
 }
