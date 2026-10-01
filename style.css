@@ -508,23 +508,20 @@ footer {
 }
 
 .address-ko {
-    margin-bottom: 8px !important;
-   font-weight: 700;
+   margin-bottom: 8px !important;
 }
 
 .address-en {
-    margin-bottom: 45px !important;
-    font-weight: 700;
+   margin-bottom: 45px !important;
 }
 
-.location-detail {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+.address-ko,
+.address-en {
+   font-weight: 700;
 }
 
-.location-detail strong {
-    font-weight: 700;
+.location-detail p:nth-child(2){
+   font-weight: 700;
 }
 
 .location-image {
