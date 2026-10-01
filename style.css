@@ -538,13 +538,15 @@ footer {
 
 /* Exhibitions */
 
+
+
 .past-exhibitions-title {
 
     width: 1100px;
 
     max-width: calc(100% - 40px);
 
-    margin: 0 0 35px;
+    margin: 0 auto;
  
     font-size: 24px;
 
