@@ -1,49 +1,184 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery CMB</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<header>
-    <a href="index.html">
-        <img src="logo.png" alt="Gallery CMB Logo" class="logo">
-    </a>
-
-    <nav>
-        <a href="index.html">Exhibitions</a>
-        <a href="about.html">About</a>
-    </nav>
-</header>
+body {
+    font-family: 'Apple SD Gothic Neo', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #111111;
+}
 
 
-<main>
+/* Header */
 
-    <section class="page-title">
-        <h1>Exhibitions</h1>
-    </section>
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #111111;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    opacity: 0.5;
+}
 
 
-    <section class="exhibitions">
+/* Main */
 
-        <!-- 전시 사진은 나중에 여기에 추가 -->
-
-        <div class="exhibition-placeholder">
-            <p>Exhibitions</p>
-        </div>
-
-    </section>
-
-</main>
+main {
+    padding: 60px 70px;
+}
 
 
-<footer>
-    <p>© 2026 Gallery Color Me Bad. All rights reserved.</p>
-</footer>
+/* Page title */
 
-</body>
-</html>
+.page-title {
+    margin-bottom: 60px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+/* Exhibitions */
+
+.exhibitions {
+    width: 100%;
+}
+
+.exhibition-placeholder {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+}
+
+.exhibition-placeholder p {
+    font-size: 14px;
+    color: #777777;
+}
+
+
+/* About */
+
+.about-intro {
+    max-width: 700px;
+    margin-bottom: 120px;
+}
+
+.about-intro p {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* Gallery spaces */
+
+.space {
+    margin-bottom: 120px;
+}
+
+.space h2 {
+    margin-bottom: 30px;
+}
+
+.space-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    min-height: 300px;
+}
+
+.space-info {
+    margin-top: 25px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* Contact */
+
+.contact {
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+
+.contact p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 30px 70px;
+    border-top: 1px solid #dddddd;
+    font-size: 12px;
+    color: #777777;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 18px 20px;
+    }
+
+    .logo {
+        height: 42px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    main {
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .space-images {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        padding: 25px 20px;
+    }
+}
