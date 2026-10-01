@@ -509,10 +509,12 @@ footer {
 
 .address-ko {
     margin-bottom: 8px !important;
+   font-weight: 700;
 }
 
 .address-en {
     margin-bottom: 45px !important;
+    font-weight: 700;
 }
 
 .location-detail {
