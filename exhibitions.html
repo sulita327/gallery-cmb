@@ -66,17 +66,22 @@
 
   <header>
 
-    <a href="index.html" class="logo">
-      <img src="logo.png" alt="Color Me Bad">
-    </a>
+  <button class="menu-button" onclick="toggleMenu()" aria-label="Open menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
-    <nav>
-      <a href="exhibitions.html">Exhibitions</a>
-      <a href="about.html">About</a>
-    </nav>
+  <a href="index.html" class="logo-link">
+    <img src="logo.png" alt="Gallery CMB" class="logo">
+  </a>
 
-  </header>
+</header>
 
+<nav id="menu" class="menu">
+  <a href="index.html">Exhibitions</a>
+  <a href="about.html">About</a>
+</nav>
 
   <main class="exhibitions">
 
@@ -355,6 +360,11 @@
     © 2026 Color Me Bad. All rights reserved.
   </footer>
 
+<script>
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("open");
+}
+</script>
 
 </body>
 </html>
