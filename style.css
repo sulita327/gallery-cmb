@@ -374,3 +374,126 @@ footer {
     height: auto;
     margin-top: 30px;
 }
+
+/* =========================
+   SPACE CAROUSEL
+   ========================= */
+
+.space-carousel {
+    width: 100%;
+    max-width: 820px;
+    margin: 45px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}
+
+.carousel-image-wrap {
+    width: 100%;
+    max-width: 780px;
+    overflow: hidden;
+}
+
+.carousel-image-wrap img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 560px;
+    object-fit: contain;
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.carousel-image-wrap img.changing {
+    opacity: 0;
+    transform: translateX(18px);
+}
+
+.carousel-button {
+    flex: 0 0 auto;
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: none;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 28px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    color: #111;
+    opacity: 0.55;
+    transition: opacity 0.2s ease;
+}
+
+.carousel-button:hover {
+    opacity: 1;
+}
+
+.carousel-counter {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    color: #777;
+}
+
+.space-info {
+    max-width: 780px;
+    margin: 55px auto 0;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.space-info p {
+    margin: 0;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .space-carousel {
+        gap: 8px;
+        margin-top: 35px;
+    }
+
+    .carousel-image-wrap {
+        max-width: calc(100vw - 75px);
+    }
+
+    .carousel-image-wrap img {
+        max-height: 480px;
+    }
+
+    .carousel-button {
+        width: 22px;
+        height: 22px;
+        font-size: 25px;
+        line-height: 22px;
+    }
+
+    .carousel-counter {
+        margin-top: 14px;
+        font-size: 9px;
+    }
+
+    .space-info {
+        margin-top: 45px;
+        font-size: 12px;
+    }
+
+    .floor-plan {
+        margin-top: 80px;
+    }
+
+    .floor-plan img {
+        margin-top: 25px;
+    }
+
+}
