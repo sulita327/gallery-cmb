@@ -535,7 +535,20 @@ footer {
     height: auto;
 }
 
+/* Exhibitions */
 
+.past-exhibitions-title {
+
+    width: 1100px;
+
+    max-width: calc(100% - 40px);
+
+    margin: 0 auto 35px;
+
+    font-size: 24px;
+
+    font-weight: 700;
+}
 
 /* ==================================================
    MOBILE
