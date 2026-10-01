@@ -920,5 +920,30 @@ footer {
     .poster-next {
         right: -5px;
     }
+/* ABOUT LOCATION */
 
+.about-location {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: stretch;
+}
+
+.location-info {
+    text-align: left;
+}
+
+.location-info h2 {
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+
+.location-info p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.location-image {
+    margin-top: 50px;
+}
 }
