@@ -522,6 +522,7 @@ footer {
 .location-detail p:nth-child(2){
    font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
    font-weight: 700;
+   margin-bottom: 10px;
 }
 
 .location-info p.address-ko,
