@@ -69,37 +69,41 @@
     <!-- SPACE -->
 
     <section class="space">
+<div class="space-carousel">
 
-        <div class="space-carousel">
+    <button class="carousel-button prev"
+            onclick="changeSlide(-1)"
+            aria-label="Previous image">
+        ‹
+    </button>
 
-            <button
-                class="carousel-button prev"
-                onclick="changeSlide(-1)"
-                aria-label="Previous image"
-            >
-                ‹
-            </button>
+    <div class="carousel-image-wrap">
 
+        <img class="space-slide active"
+             src="./space-01.webp"
+             alt="Color Me Bad space">
 
-            <div class="carousel-image-wrap">
+        <img class="space-slide"
+             src="./space-02.webp"
+             alt="Color Me Bad space">
 
-                <img
-                    id="spaceImage"
-                    src="./space-01.jpg"
-                    alt="Color Me Bad space"
-                >
+        <img class="space-slide"
+             src="./space-03.webp"
+             alt="Color Me Bad space">
 
-            </div>
+        <img class="space-slide"
+             src="./space-04.webp"
+             alt="Color Me Bad space">
 
+    </div>
 
-            <button
-                class="carousel-button next"
-                onclick="changeSlide(1)"
-                aria-label="Next image"
-            >
-                ›
-            </button>
+    <button class="carousel-button next"
+            onclick="changeSlide(1)"
+            aria-label="Next image">
+        ›
+    </button>
 
+</div>
 
         <!-- SPACE INFO -->
 
@@ -148,7 +152,6 @@
 </main>
 
 
-
 <footer>
 
     © 2026 Gallery Color Me Bad. All rights reserved.
@@ -156,73 +159,29 @@
 </footer>
 
 
-
 <script>
+    let currentIndex = 0;
 
-const spaceImages = [
+    const slides = document.querySelectorAll(".space-slide");
 
-    "./space-01.jpg",
-    "./space-02.jpg",
-    "./space-03.jpg",
-    "./space-04.jpg"
+    function changeSlide(direction) {
 
-];
+        const nextIndex =
+            (currentIndex + direction + slides.length)
+            % slides.length;
 
-spaceImages.forEach(src => {
-    const img = new Image();
-    img.src = src;
-});
+        slides[currentIndex].classList.remove("active");
 
-let currentIndex = 0;
+        slides[nextIndex].classList.add("active");
 
+        currentIndex = nextIndex;
+    }
 
-function changeSlide(direction) {
-
-    const image = document.getElementById("spaceImage");
-    const counter = document.getElementById("currentSlide");
-
-
-    image.classList.add("changing");
-
-
-    setTimeout(() => {
-
-        currentIndex += direction;
-
-
-        if (currentIndex < 0) {
-            currentIndex = spaceImages.length - 1;
-        }
-
-
-        if (currentIndex >= spaceImages.length) {
-            currentIndex = 0;
-        }
-
-
-        image.src = spaceImages[currentIndex];
-
-
-        counter.textContent =
-            String(currentIndex + 1).padStart(2, "0");
-
-
-        image.classList.remove("changing");
-
-    }, 180);
-
-}
-
-
-
-function toggleMenu() {
-
-    document
-        .getElementById("menu")
-        .classList.toggle("open");
-
-}
-
+    function toggleMenu() {
+        document
+            .getElementById("menu")
+            .classList.toggle("open");
+    }
 </script>
 
 
