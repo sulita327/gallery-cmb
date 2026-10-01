@@ -395,37 +395,35 @@ footer {
 
 
 .carousel-image-wrap {
+    position: relative;
     width: 100%;
     max-width: 700px;
-
+    aspect-ratio: 4 / 3;
     overflow: hidden;
 }
 
-
-.carousel-image-wrap img {
+.carousel-image-wrap .space-slide {
+    position: absolute;
+    inset: 0;
     display: block;
-
     width: 100%;
-    height: auto;
-
-    max-height: 520px;
-
+    height: 100%;
     object-fit: contain;
 
-    opacity: 1;
-    transform: translateX(0);
+    opacity: 0;
+    transform: translateX(18px);
 
     transition:
         opacity 0.35s ease,
         transform 0.35s ease;
+
+    pointer-events: none;
 }
 
-
-.carousel-image-wrap img.changing {
-    opacity: 0;
-    transform: translateX(18px);
+.carousel-image-wrap .space-slide.active {
+    opacity: 1;
+    transform: translateX(0);
 }
-
 
 /* 화살표 */
 
