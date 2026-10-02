@@ -489,14 +489,14 @@ footer {
     font-weight: 400;
 }
 
-.address-ko {
+.address-en {
    margin-bottom: 8px !important;
   font-family: 'Pretendard', sans-serif;
    font-weight: 400;
 }
 
-.address-en {
-   margin-bottom: 25px !important;
+.address-ko {
+   margin-bottom: 16px !important;
   font-family: 'Pretendard', sans-serif;
    font-weight: 400;
 }
