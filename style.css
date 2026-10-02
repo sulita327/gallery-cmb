@@ -533,7 +533,7 @@ footer {
 .about-description {
     width: 100%;
     max-width: 650px;
-    margin: 120px auto 0;
+    margin: 80px auto 0;
 }
 
 .about-description p {
@@ -794,8 +794,8 @@ footer {
 
 .poster-stage {
     position: relative;
-    width: min(78vw, 950px);
-    height: min(calc(100vh - 220px), 850px);
+    width: min(82vw, 1050px);
+    height: min(calc(100vh - 200px), 900px);
     display: flex;
     align-items: center;
     justify-content: center;
