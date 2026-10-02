@@ -462,7 +462,7 @@ footer {
 
 /* About -  */
 
-.about- {
+.about-location{
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
@@ -509,7 +509,8 @@ footer {
 
 .location-detail p:first-child {
    margin bottom: 25px;
-   
+}
+
 .location-info p.address-ko,
 .location-info p.address-en {
    font-weight: 700;
@@ -780,22 +781,20 @@ footer {
 .poster-carousel {
     position: relative;
     width: 100%;
-    max-width: 1100px;
+    max-width: 900px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 
 .poster-stage {
     position: relative;
-    width: min(87vw, 1000px);
-    height: min(calc(100vh - 180px), 1060px);
+    width: min(72vw, 820px);
+    height: min(calc(100vh - 260px), 760px);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 
 /* =========================
    POSTER
@@ -838,12 +837,11 @@ footer {
 
 .poster-button {
     position: absolute;
-
     top: 50%;
     transform: translateY(-50%);
 
-    width: 50px;
-    height: 70px;
+    width: 40px;
+    height: 60px;
 
     padding: 0;
     margin: 0;
@@ -852,38 +850,28 @@ footer {
     background: transparent;
 
     color: #111;
-
-   font-family: 'Pretendard', sans-serif;
-
-    font-size: 42px;
+    font-family: 'Pretendard', sans-serif;
+    font-size: 36px;
     font-weight: 300;
-
     line-height: 1;
 
     cursor: pointer;
-
     z-index: 5;
 
-    transition:
-        opacity 0.2s ease,
-        transform 0.2s ease;
+    transition: opacity 0.2s ease;
 }
-
-
+   
 .poster-button:hover {
     opacity: 0.4;
 }
-
-
+   
 .poster-prev {
     left: 0;
 }
 
-
 .poster-next {
     right: 0;
 }
-
 
 /* =========================
    FOOTER
