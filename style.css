@@ -519,7 +519,7 @@ footer {
 
 .location-image {
     width: 100%;
-   margin-top:65px;
+   margin-top:80px;
 }
 
 .location-image img {
@@ -794,8 +794,8 @@ footer {
 
 .poster-stage {
     position: relative;
-    width: min(72vw, 820px);
-    height: min(calc(100vh - 260px), 760px);
+    width: min(78vw, 950px);
+    height: min(calc(100vh - 220px), 850px);
     display: flex;
     align-items: center;
     justify-content: center;
