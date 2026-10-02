@@ -469,7 +469,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1.35fr;
     gap: 70px;
-    align-items: center;
+    align-items: start;
 }
 
 .location-info {
@@ -533,7 +533,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1.35fr;
     gap: 70px;
-    align-items: center;
 }
 
 .past-exhibitions-title {
