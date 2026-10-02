@@ -190,10 +190,7 @@ main {
 
     margin: 0;
 
-    font-family:
-        "Noto Sans KR",
-        "Apple SD Gothic Neo",
-        sans-serif;
+    font-family: 'Pretendard', sans-serif;
 
     font-size: 15px;
 
@@ -312,7 +309,7 @@ main {
 
     margin: 0;
 
-    font-family: Arial, sans-serif;
+    font-family: 'Pretendard', sans-serif;
 
     font-size: 48px;
 
@@ -362,10 +359,7 @@ main {
         auto
         0;
 
-    font-family:
-        "Noto Sans KR",
-        "Apple SD Gothic Neo",
-        sans-serif;
+    font-family: 'Pretendard', sans-serif;
 
     font-size: 13px;
 
@@ -497,18 +491,18 @@ footer {
 
 .address-ko {
    margin-bottom: 8px !important;
-   font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+  font-family: 'Pretendard', sans-serif;
    font-weight: 700;
 }
 
 .address-en {
    margin-bottom: 45px !important;
-   font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+  font-family: 'Pretendard', sans-serif;
    font-weight: 700;
 }
 
 .location-detail p:nth-child(2){
-   font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+   font-family: 'Pretendard', sans-serif;
    font-weight: 700;
    margin-bottom: 10px;
 }
