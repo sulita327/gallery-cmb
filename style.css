@@ -496,15 +496,15 @@ footer {
 }
 
 .address-en {
-   margin-bottom: 45px !important;
+   margin-bottom: 25px !important;
   font-family: 'Pretendard', sans-serif;
    font-weight: 700;
 }
 
-.location-detail p:nth-child(2){
+.location-detail p:nth-child(1){
    font-family: 'Pretendard', sans-serif;
    font-weight: 700;
-   margin-bottom: 10px;
+   margin-bottom: 16px;
 }
 
 .location-info p.address-ko,
