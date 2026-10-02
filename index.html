@@ -113,9 +113,12 @@ function changePoster(direction) {
         .add("active");
 
     posterIndex = nextIndex;
-
 }
-
+    
+setInterval(() => {
+  changePoster(1);
+}, 5000);
+    
 </script>
 
 
