@@ -904,6 +904,8 @@ footer {
     align-items: stretch;
 }
 
+
+   
 .location-info {
     text-align: left;
 }
@@ -920,6 +922,14 @@ footer {
 
 .location-image {
     margin-top: 50px;
+}
+
+.past-exhibitions-title {
+    width: 100%;
+    max-width: none;
+    margin: 0 0 35px;
+    font-size: 24px;
+    font-weight: 700;
 }
 }
 
