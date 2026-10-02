@@ -467,7 +467,7 @@ footer {
     max-width: 1100px;
     margin: 0 auto;
     display: grid;
-    -template-columns: 1fr 1.35fr;
+    grid-template-columns: 1fr 1.35fr;
     gap: 70px;
     align-items: start;
 }
