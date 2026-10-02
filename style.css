@@ -562,7 +562,7 @@ footer {
 .past-exhibitions-header {
     width: 100%;
     max-width: 1100px;
-    margin: 0 auto 0px;
+    margin: 0 auto 35px;
     display: ;
     grid-template-columns: 1fr 1.35fr;
     gap: 70px;
