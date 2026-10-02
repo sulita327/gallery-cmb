@@ -953,3 +953,19 @@ footer {
     margin-top: 50px;
 }
 }
+
+.instagram-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #111;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.instagram-icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
