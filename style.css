@@ -52,7 +52,9 @@ body {
 
     justify-content: space-between;
 
-   border-bottom: 1px solid #111;
+   border-bottom: 1px solid #d0d0d0;
+
+   padding-bottom: 15px;
    
 }
 
@@ -145,30 +147,17 @@ main {
 ================================================== */
 
 .page-title {
+  width: 900px;
+  max-width: calc(100% - 40px);
+  margin: 25px auto 15px;
 
-    margin:
-        0
-        0
-        80px;
-}
+  text-align: center;
 
-
-.page-title h1 {
-
-    margin: 0;
-
-    font-family:
-        "Helvetica Neue",
-        Arial,
-        sans-serif;
-
-    font-size: 32px;
-
-    line-height: 1.2;
-
-    font-weight: 700;
-
-    letter-spacing: -0.04em;
+  font-family: "Pretendard", sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.04em;
 }
 
 
