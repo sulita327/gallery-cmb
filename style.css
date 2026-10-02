@@ -460,9 +460,9 @@ footer {
 }
 
 
-/* About - Location */
+/* About -  */
 
-.about-location {
+.about- {
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
@@ -501,12 +501,15 @@ footer {
    font-weight: 700;
 }
 
-.location-detail p:nth-child(1){
+.location-detail p {
    font-family: 'Pretendard', sans-serif;
-   font-weight: 700;
-   margin-bottom: 16px;
+   font-weight: 400;
+   margin-bottom: 25px;
 }
 
+.location-detail p:first-child {
+   margin bottom: 25px;
+   
 .location-info p.address-ko,
 .location-info p.address-en {
    font-weight: 700;
