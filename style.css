@@ -542,6 +542,7 @@ footer {
     font-size: 16px;
     line-height: 1.9;
     font-weight: 400 !important;
+    text-align: justify;
 }
 
 .about-description-en {
