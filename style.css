@@ -532,7 +532,7 @@ footer {
 
 .about-description {
     width: 100%;
-    max-width: 820px;
+    max-width: 650px;
     margin: 120px auto 0;
 }
 
@@ -545,6 +545,9 @@ footer {
 }
 
 .about-description-en {
+    margin-top: 0;
+}
+.about-description-ko {
     margin-top: 70px;
 }
 
