@@ -745,7 +745,7 @@ footer {
 .poster-stage {
     position: relative;
     width: min(87vw, 1000px);
-    height: min(100vh, 1060px);
+    height: min(calc(100vh - 180px), 1060px);
     display: flex;
     align-items: center;
     justify-content: center;
