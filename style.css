@@ -490,13 +490,13 @@ footer {
 }
 
 .address-en {
-   margin-bottom: 8px !important;
+   margin-bottom: 6px !important;
   font-family: 'Pretendard', sans-serif;
    font-weight: 400;
 }
 
 .address-ko {
-   margin-bottom: 16px !important;
+   margin-bottom: 25px !important;
   font-family: 'Pretendard', sans-serif;
    font-weight: 400;
 }
