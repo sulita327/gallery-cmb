@@ -1,3 +1,5 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
 /* ==================================================
    RESET
 ================================================== */
@@ -20,10 +22,7 @@ body {
     background: #ffffff;
     color: #111111;
 
-    font-family:
-        "Helvetica Neue",
-        Arial,
-        sans-serif;
+    font-family: 'Pretendard', sans-serif;
 
     font-weight: 700;
 
